@@ -7,57 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson3</title>
     <style>
-     .box-content{
-         border: 10px solid silver;
-         text-align: center;
-         border-radius: 5px;
-         box-sizing:border-box;
-         height: 100%;
-         width: 100%;
-     }
-     .box-content-2{
-         border: 1px solid silver;
-        font-size:35px;
-         color: #a2a9b1;
-         background: tomato;
-         box-sizing:border-box;
-     }
-     .flex-union{
-         display: flex;
-         justify-content: space-between;
-         box-sizing:border-box;
-     }
-     .box-A{
-         height:120% ;
-     }
-     .box-B{
-         height:500px;
-         width: 950px;
-         text-align: center;
-     }
-     .box-C{
-     width: 350px;
-         text-align: center;
-     }
-     h1{
-        text-align:center;
-         margin: 0 auto;
-     }
+
+        .box{
+            width: 100%;
+            border:10px solid silver;
+            box-sizing: border-box;
+            text-align: center;
+            font-size:35px;
+        }
+        .union{
+            display: flex;
+            text-align: center;
+        }
+        .background{
+         background: darkgoldenrod;
+        }
+        .A{
+            height:150px;
+        }
+        .union{
+            height:440px;
+        }
+        .B{
+            width: 1000px;
+            border-top:2px solid silver;
+            border-right:2px solid silver ;
+        }
+        .C{
+            width:430px;
+            border-top:2px solid silver ;
+        }
     </style>
 </head>
 <body>
-<div class="box-content">
-    <div class="box-A box-content-2">
-        <h1>A</h1>
+<div class="box">
+    <div class="A background">A</div>
+    <div class="union">
+        <div class="B background">B</div>
+        <div class="C background">C</div>
     </div>
-    <div class="flex-union">
-        <div class="box-B box-content-2">
-            <h1>B</h1>
-        </div>
-        <div class="box-C box-content-2">
-            <h1>C</h1>
-        </div>
-</div>
 </div>
 </body>
 </html>

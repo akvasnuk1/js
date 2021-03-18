@@ -7,75 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson3</title>
     <style>
-        .box-content{
-            border: 10px solid silver;
-            text-align: center;
-            border-radius: 5px;
-            box-sizing:border-box;
-            height: 100%;
+
+        .box{
             width: 100%;
-        }
-        .box-content-2{
-            border: 1px solid silver;
-            font-size:35px;
-            color: #a2a9b1;
-            background: tomato;
-            box-sizing:border-box;
-        }
-        .flex-union{
-            display: flex;
-            justify-content: space-between;
-            box-sizing:border-box;
-        }
-        .box-A{
-            height:120% ;
-        }
-        .box-B{
-            height:500px;
-            width: 950px;
-        }
-        .box-F{
-            width: 350px;
+            border:10px solid silver;
+            box-sizing: border-box;
             text-align: center;
+            font-size:35px;
         }
-        h1{
-            text-align:center;
-            margin: 0 auto;
+        .background{
+            background: darkgoldenrod;
+        }
+        .A{
+            height:150px;
         }
         .union{
             display: flex;
-            justify-content:space-between;
         }
-        .content{
-            height: 150px;
-            width: 50px;
+        .B{
+            width: 1000px;
+            border-top:2px solid silver;
+            border-bottom:2px solid silver ;
+            height: 250px;
+            display: flex;
         }
-        .box h1{
-            height: 900px;
+        .H{
+            width:430px;
+            border-top:2px solid silver ;
+        }
+        .flex-union{
+            display:flex;
+            background: darkgoldenrod;
+            height: 200px;
+        }
+        .width{
+            width: 304.5px;
+        }
+        .E{
+            border-right:2px solid silver;
+        }
+        .C{
+            border-right: 2px solid silver;
+        }
+        .D{
+            border-right: 2px solid silver
         }
     </style>
 </head>
 <body>
-<div class="box-content">
-    <div class="box-A box-content-2">
-        <h1>A</h1>
+<div class="box">
+    <div class="A background">A</div>
+    <div class="union">
+        <div class="B">
+            <div class="C width background">B</div>
+            <div class="D width background">C</div>
+            <div class="E width background">D</div>
+        </div>
+        <div class="H background">H</div>
     </div>
     <div class="flex-union">
-        <div class="box-B box-content-2">
-            <div class="union box-content-2">
-                <div class="content" ><h1>B</h1></div>
-                <div class="content"><h1>C</h1></div>
-                <div class="content"><h1>D</h1></div>
-            </div>
-            <div class="union box-content-2">
-                <div class="content"><h1>E</h1></div>
-                <div class="content"><h1>F</h1></div>
-                <div class="content"><h1>G</h1></div>
-            </div>
-        </div>
-        <div class="box-F box-content-2">
-            <h1>H</h1>
-        </div>
+        <div class="C width background">E</div>
+        <div class="D width background">F</div>
+        <div class="E width background">G</div>
     </div>
 </div>
 </body>
