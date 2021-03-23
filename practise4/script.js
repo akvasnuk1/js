@@ -83,8 +83,8 @@ let strrr = prompt("Enter something", "ho-ho");
 console.log(strrr);
 //Example 13
 /*13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert*/
-let number1=prompt("Enter a number", "5");
-let number2=prompt("Enter a number", "6");
+let number1=+prompt("Enter a number", "5");
+let number2=+prompt("Enter a number", "6");
 let numbers=number1+number2;
 alert(numbers);
 //Example 14
@@ -92,5 +92,5 @@ alert(numbers);
 Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert*/
 let FirstName=prompt("Enter your FirstName:","Vasil");
 let LastName=prompt("Enter your LastName:","Petrovich");
-let age=prompt("Enter your Age:","30");
+let age=+prompt("Enter your Age:","30");
 alert('Доброго вечера'+' '+FirstName+' '+LastName+','+' '+'мои поздравления что вам'+' '+age);

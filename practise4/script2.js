@@ -1,7 +1,7 @@
 //Example 1
-let number1=prompt("Enter a number1:","8");
-let number2=prompt("Enter a number2:","1");
-let number3=prompt("Enter a number3:","10");
+let number1=+prompt("Enter a number1:","8");
+let number2=+prompt("Enter a number2:","1");
+let number3=+prompt("Enter a number3:","10");
 if(number1<number2 && number2<number3)
     alert(number1+','+number2+','+number3);
 else if (number2<number1 && number2<number3)
