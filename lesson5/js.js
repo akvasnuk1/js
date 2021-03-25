@@ -437,7 +437,7 @@ for(let i=0;i<100;i++){
 console.log(array)*/
 /*let array=[];
 for(let i=0;i<50;i++){
-    array[i]=Math.floor((Math.random()*716)+18);
+    array[i]=Math.floor((Math.random()*(732-18)+18);
 }
 console.log(array)*/
 //Exercise 2
@@ -507,7 +507,7 @@ console.log(bill);*/
 /*
 let array=[];
 for(let i=0;i<10;i++){
-    array[i]=Math.floor((Math.random()*732)+18);
+    array[i]=Math.floor((Math.random()*(732-18)+18);
 }
 console.log(array);
 let newArray=[];
