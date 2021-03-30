@@ -316,8 +316,12 @@ let citiesWithId = [
     {user_id: 2, country: 'Poland', city: 'Krakow'},
     {user_id: 4, country: 'USA', city: 'Miami'}
 ];
-let newArray=[];
+
+let usersWithCities=[];
 for(let i=0;i<usersWithId.length;i++){
-    usersWithId[i].address={user_id:citiesWithId[i].user_id,country:citiesWithId[i].country,city:citiesWithId[i].city};
+    usersWithCities[i]={id:usersWithId[i].id,name:usersWithId[i].name,age:usersWithId[i].age,status:usersWithId[i].status};
 }
-console.log(usersWithId);
+for(let i=0;i<usersWithCities.length;i++){
+    usersWithCities[i].address={user_id:citiesWithId[i].user_id,country:citiesWithId[i].country,city:citiesWithId[i].city};
+}
+console.log(usersWithCities);
