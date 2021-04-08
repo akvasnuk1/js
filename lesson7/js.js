@@ -342,7 +342,7 @@ car.info();*/
 /*
 function Car(model,manufacturer,graduationYear,MAxSpeed,EngineCapacity){
     this.model=model;
-    this.manufturer=manufacturer;
+    this.manufacturer=manufacturer;
     this.graduationYear=graduationYear;
     this.MaxSpeed=MAxSpeed;
     this.EngineCapacity=EngineCapacity;
@@ -353,7 +353,7 @@ function Car(model,manufacturer,graduationYear,MAxSpeed,EngineCapacity){
         if(this.driver){
             console.log(`Information about car:\n
     model:${this.model},\n
-    manufacturer:${this.manufturer},\n
+    manufacturer:${this.manufacturer},\n
     graduationYear:${this.graduationYear},\n
     MAxSpeed:${this.MaxSpeed},\n
     EngineCapacity:${this.EngineCapacity}\n
@@ -361,7 +361,7 @@ function Car(model,manufacturer,graduationYear,MAxSpeed,EngineCapacity){
         }else {
             console.log(`Information about car:\n
     model:${this.model},\n
-    manufacturer:${this.manufturer},\n
+    manufacturer:${this.manufacturer},\n
     graduationYear:${this.graduationYear},\n
     MAxSpeed:${this.MaxSpeed},\n
     EngineCapacity:${this.EngineCapacity}`)
@@ -380,9 +380,9 @@ function Car(model,manufacturer,graduationYear,MAxSpeed,EngineCapacity){
 let car='TESLA X1000';
 let manufacture='TESLA';
 let year=2021;
-let speedmax=300;
+let newSpeed=300;
 let capacity=5;
-let Cars=new Car(car,manufacture,year,speedmax,capacity);
+let Cars=new Car(car,manufacture,year,newSpeed,capacity);
 Cars.drive();
 Cars.info();
 Cars.increaseMaxSpeed(15);
@@ -402,7 +402,7 @@ Cars.info();*/
 class Car{
     constructor(model,manufacturer,graduationYear,MAxSpeed,EngineCapacity) {
         this.model = model;
-        this.manufturer = manufacturer;
+        this.manufacturer = manufacturer;
         this.graduationYear = graduationYear;
         this.MaxSpeed = MAxSpeed;
         this.EngineCapacity = EngineCapacity;
@@ -414,7 +414,7 @@ class Car{
             if(this.driver){
                 console.log(`Information about car:\n
     model:${this.model},\n
-    manufacturer:${this.manufturer},\n
+    manufacturer:${this.manufacturer},\n
     graduationYear:${this.graduationYear},\n
     MAxSpeed:${this.MaxSpeed},\n
     EngineCapacity:${this.EngineCapacity}\n
@@ -422,7 +422,7 @@ class Car{
             }else {
                 console.log(`Information about car:\n
     model:${this.model},\n
-    manufacturer:${this.manufturer},\n
+    manufacturer:${this.manufacturer},\n
     graduationYear:${this.graduationYear},\n
     MAxSpeed:${this.MaxSpeed},\n
     EngineCapacity:${this.EngineCapacity}`)
@@ -443,9 +443,9 @@ class Car{
 let car='TESLA X1000';
 let manufacture='TESLA';
 let year=2021;
-let speedmax=300;
+let newSpeed=300;
 let capacity=5;
-let Cars=new Car(car,manufacture,year,speedmax,capacity);
+let Cars=new Car(car,manufacture,year,newSpeed,capacity);
 Cars.drive();
 Cars.info();
 Cars.increaseMaxSpeed(15);
