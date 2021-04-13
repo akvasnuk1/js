@@ -406,6 +406,105 @@ numbers(number);*/
 3) Flat
 Вирівняти багаторівневий масив в однорівневий
     [1,3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]*/
-let array=[1,3, ['Hello', 'World', [9,6,1]], ['oops'], 9];
+/*let array=[1,3, ['Hello', 'World', [9,6,1]], ['oops'], 9];
 let newArray=array.flat(2)
-console.log(newArray)
+console.log(newArray)*/
+
+/*
+2) Deep Copy
+реалізувати глибоке копіювання обєкту за допомогою рекурсій*/
+/*
+let array=[1,3, ['Hello', 'World', [9,6,1]], ['oops'], 9];
+let arrayString=array.join(",");
+let newArrays=arrayString.split(",");
+let Arrays=[];
+for (let i=0;i<newArrays.length;i++) {
+        Arrays[i]=parseInt(newArrays[i]);
+}
+let newArrays1=newArrays.splice(2,2);
+let newArrays2=newArrays.splice(5,1);
+let ARRAYS=newArrays1.concat(newArrays2);
+Arrays.splice(2,2,ARRAYS[0],ARRAYS[1]);
+Arrays.splice(7,1,ARRAYS[2]);
+console.log(Arrays);*/
+/*
+Cоздать функцию которая принимает число и возвращает  текст как в примере:
+    3275  —>  "3000 + 200 + 70 +5"*/
+/*
+const func=(number)=>{
+    let arr=number.toString().split("").reverse();
+    for (let i = 0; i < arr.length; i++) {
+        arr[i]=arr[i]*Math.pow(10,i);
+    }
+    let result=arr.reverse().join(" + ");
+    console.log(result);
+}
+
+
+console.time('a')
+const result = numbers(number);
+console.log(result);
+console.timeEnd("a")*/
+/*function bool(text,text2){
+    let newText=text.split("");
+    let newText2=text2.split("");
+    let k=0;
+    console.log(newText);
+    console.log(newText2);
+    for(let i=0;i<newText2.length;i++){
+        for(let j=0;j<newText.length;j++){
+            if(newText2[i]===newText[j]){
+                k++;
+                break;
+            }
+        }
+    }
+    console.log(k);
+    if(k===newText.length){
+        console.log("True");
+    }else{
+        console.log("False");
+    }
+}
+let text='EXIT';
+let text2='XITEE';
+bool(text,text2);*/
+/*ANAGRAM | MGANRAA -> true*/
+/*
+let arr1=[1,23,3,4];
+let arr2=[5,31,3,2];
+let newArr=[];
+for (let i = 0; i < arr2.length; i++) {
+   newArr[i]=arr1[i]+arr2[i];
+
+}
+console.log(newArr);
+*/
+
+/*Количество единиц
+Дана последовательность натуральных чисел  в строке, завершающаяся двумя числами 0 подряд. Определите, сколько раз в этой последовательности встречается число 1. Числа, идущие после двух нулей, необходимо игнорировать.*/
+/*
+2176491947586100 -> 3*/
+/*
+let string='2176491947586100';
+let newArray=string.split("");
+let newArray1=[];
+let k=0;
+for (let i = 0; i < newArray.length; i++) {
+    newArray1[i]=parseInt(newArray[i]);
+    if(newArray1[i] === 1){
+        k++;
+    }
+
+}
+console.log(newArray1);
+console.log(newArray);
+console.log(k);*/
+
+/*
+Сумма цифр числа
+Дано натуральное число N. Вычислите сумму его цифр.
+    При решении этой задачи нельзя использовать строки,
+    списки, массивы ну и циклы, разумеется.
+    Рекурсія)
+*/

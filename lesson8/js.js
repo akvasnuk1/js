@@ -31,11 +31,12 @@ console.log(reduceArray);*/
 b) Відсортувати в зворотньому порядку
 c) Отримати в новому масиві тільки ті слова, довжина яких більша за 4 букви (filter)
 d) Змінити кожне слово в масиві додавши на початок 'Sam says *ваше слово*'*/
-/*
-let arr=['vasya','petya','kolya','olya','max','anya','oleg','andrey','masha','olya','max','vasya','petya','kolya','olya','max','anya'];
-let sortArr=arr.sort();
+/*let arr=['vasya','petya','kolya','olya','max','anya','oleg','andrey','masha','olya','max','vasya','petya','kolya','olya','max','anya'];
+let newArr=arr.sort((a,b)=>a>b?1:-1);
+console.log(newArr);*/
+/*let sortArr=arr.sort();
 console.log(sortArr);
-let sortArr2=arr.sort((a,b)=>a<b?1:-1);
+let sortArr2=arr.sort((a,b)=>a<b?-1:1);
 console.log(sortArr2);
 let filterArr=arr.filter(value => value.length>4);
 console.log(filterArr);
@@ -48,8 +49,7 @@ c) пройтись по ньому та додати кожному юзеру 
 та зберегти це в новий масив (первинний масив залишиться без змін)
 d) відсортувати його за індентифікатором
 e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)*/
-/*
-const users = [
+/*const users = [
     {name: 'vasya', age: 31, isMarried: false},
     {name: 'petya', age: 30, isMarried: true},
     {name: 'kolya', age: 29, isMarried: true},
@@ -145,8 +145,7 @@ console.log(EnginePlusPower);
 let PowerPlusProduce=cars.filter(value => value.power>250&&value.producer==='bmw')
 console.log(PowerPlusProduce);
 */
-/*
-const usersWithAddress = [
+/*const usersWithAddress = [
     {id: 9, name: 'vasya', age: 31, isMarried: false, address: {city: 'Kyiv', street: 'Gongadze', number: 16}},
     {id: 2, name: 'petya', age: 30, isMarried: true, address: {city: 'Rivne', street: 'Zelena', number: 1}},
     {id: 4, name: 'kolya', age: 29, isMarried: true, address: {city: 'Lviv', street: 'Pasichna', number: 121}},
@@ -235,7 +234,7 @@ console.log(MarriedAndAge);*/
     то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі*/
 
-let arrayCar=[
+/*let arrayCar=[
     {producer:'bmw', engine:3, owner:'Vasya', price:200000, age:2019, Owner:{name:'Vasya', age:22, experience:5}},
     {producer:'audi', engine:2, owner:'Petro', price:300000, age:2018, Owner:{name:'Petro', age:33, experience:2}},
     {producer:'mercedes', engine:3, owner:'Nazar', price:400000, age:2017, Owner:{name:'Nazar', age:23, experience:3}},
@@ -254,9 +253,9 @@ let newArrayCar=arrayCar.map((value,index)=>{
 })
 console.log(newArrayCar);
 let newCourseCar=newArrayCar.map((value)=>{
-    if(value.owner.experience<5&&value.owner.age>25){
+    if(value.Owner.experience<5&&value.Owner.age>25){
         value.gotocourse=true;
-        value.owner.experience+=1;
+        value.Owner.experience+=1;
     }
     return value;
 })
@@ -266,7 +265,7 @@ let sum=0;
 newArrayCar.forEach((value)=>{
     sum+=value.price;
 });
-console.log(sum);
+console.log(sum);*/
 
 
 /*
@@ -309,3 +308,14 @@ let numbers=(arr,key)=>{
 }
 Arr=[1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14];
 numbers(Arr,0);*/
+/*
+Знайти набільший елемент в масиві за допомогою reduce
+    [1,6,9,0,17,88,4,7] -> 88*/
+/*let arr=[1,6666,9,0,17,888,98,7];
+let newArr=arr.reduce((acc,value)=>{
+    if(value>acc){
+        acc=value;
+    }
+    return acc;
+},0)
+console.log(newArr);*/

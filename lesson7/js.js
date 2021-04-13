@@ -533,3 +533,130 @@ let cinderella10 =new Cinderella("Irina",30,44);
 let Cinderels=[cinderella1,cinderella2,cinderella3,cinderella4,cinderella5,cinderella6,cinderella7,cinderella8,cinderella9,cinderella10];
 let prince=new Prince('Vasya',12,35);
 prince.findCinderella(Cinderels)*/
+
+/*Реалізовуємо свій компютерний магазин.
+===
+Необхідно реалізувати базовий клас комютера. Який має лише параметри:
+    Оперативна память.
+    Потужність процесора. (цифра від 0 до 1000)
+Назва.
+    В кожного компютера має бути метод включання.
+===
+Від базового компютрера треба реалізувати ноутбук.
+    Він має нову властивість дюймаж монітора.
+
+    У нього зявляється нова змінна роботи батареї. Ця змінна визначається як потужність / (дюйми * оперативку)
+===
+Від ноутбука потрібно зробити ультрабук.
+    Він має нову змінну ваги.
+    При включенні ультрабуку має видаватися помилка, якшо вага більша за 2кг та батарея тримаж менше ніж 4 години.
+===
+Від базвого класу потрібно створити базовий ПК.
+    В нього має бути новий метод запуску ігор.
+    Кількість FPS визначається як потужність / опервтивку.
+    Example: `You are playing *GAME_NAME* with *FPS_COUNT* FSP`
+
+Компютер можна апгрейдити.
+    Потужність процесора можна збільшувати максимум на 10%. Зменшувати її не можна.
+    Оперативку можна збільшити лише в 2 рази. Зменшувати її не можна.
+    Для зміни характеритик мають бути свої методи. Мняти змінну "в лоб" заборонено.
+===
+Від базового ПК необхідно зробити ігнорий ПК.
+    Кількість ФПС має бути рівно в 2 рази більший ніж в звичайного ПК.
+    При запуску однієї гри потужніть процесора має падати на 0.1%.
+Якшо потужність процесора менша ніж 500. І оперативка менша за 8 потрібно ивдати помилку,
+    що на цьому відрі ігри не запускаються.*/
+
+/*
+class Computer{
+    constructor(RAM,CPUPower,name) {
+        this.RAM=RAM;
+        CPUPower<=1000&&CPUPower>=0?this.CPUPower=CPUPower:continue;
+        this.name=name;
+
+    }
+    upgradePc(CPUPower){
+        if(CPUPower<=(this.CPUPower/100)*10){
+         this.CPUPower+=CPUPower;
+         console.log(this.CPUPower);
+        }else{
+            console.log("Over a 10%");
+        }
+    }
+    upgradePC2(RAM){
+        if(RAM===2){
+            this.RAM=this.RAM*2;
+            console.log(this.RAM);
+        }else{
+            console.log("Increase only in to 2 and reduce not accept");
+        }
+    }
+}
+class laptop extends  Computer{
+    constructor(RAM,CPUPower,name,sizeOfMonitor) {
+        super(RAM,CPUPower,name);
+        this.sizeOFMonitor=sizeOfMonitor;
+        this.PowerofBatter=Math.floor(this.CPUPower/(this.sizeOFMonitor*this.RAM));
+    }
+}
+class ultraLaptop extends laptop{
+    constructor(RAM,CPUPower,name,sizeOfMonitor,weight) {
+        super(RAM,CPUPower,name,sizeOfMonitor);
+        this.weight=weight;
+        this.weight>2?console.log(' батарея тримає менше ніж 4 години'):console.log('all good');
+    }
+}
+class basePC extends Computer{
+    constructor(RAM,CPUPower,name,gameName) {
+        super(RAM,CPUPower,name);
+        this.gameName=gameName;
+        this.numberOfFps=Math.floor(this.CPUPower/this.RAM);
+        console.log(`You are Playing ${this.gameName} with ${this.numberOfFps} FSP`);
+    }
+
+}
+class GamePc extends basePC{
+    constructor(RAM,CPUPower,name,gameName) {
+        super(RAM,CPUPower,name,gameName);
+        this.numberOfFps=this.numberOfFps*2;
+    }
+    gamesName(){
+        console.log(this.CPUPower);
+        let i=this.gameName.length;
+        console.log(i);
+        while (i!=0){
+            this.CPUPower=this.CPUPower-this.CPUPower/100*0.1;
+            i--;
+        }
+        console.log(this.CPUPower);
+    }
+    Process(){
+        if(this.CPUPower<500&&this.RAM<8){
+            console.log("на цьому відрі ігри не запускаються")
+        }else{
+            console.log("на цьому відрі ігри запускаються")
+        }
+    }
+}
+let a=new GamePc(12,1000,'Asus',['dada','dasdada']);
+a.gamesName();
+a.Process()
+class NewPearson{
+    static boolean=true;
+    constructor(pearson) {
+        this.pearson=pearson;
+    }
+    func(){
+        console.log(NewPearson.boolean);
+    }
+}
+let c=new NewPearson('Vasya');
+console.log(c);
+let obj={
+    status:123,
+    bool:true,
+    validator:'daa'
+};
+let result=JSON.stringify(obj);
+let results=JSON.parse(result)
+console.log(results);*/
