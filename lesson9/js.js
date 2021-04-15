@@ -129,21 +129,21 @@ div.appendChild(button1);
 div.appendChild(button2);
 let indexleft=images.length-1;
 button1.onclick=()=>{
+    indexleft < 0 ? indexleft=images.length-1 : indexleft--;
         img.src=images[indexleft].img;
         img.style.width='300px';
         img.style.height='300px';
         div.appendChild(img);
-        indexleft < 0 ? indexleft=images.length-1 : indexleft--;
     console.log(indexleft);
 }
 let indexright=0;
 button2.onclick=()=>{
+    indexright > images.length-1 ? indexright=0 : indexright++;
         img.src=images[indexright].img;
         img.style.width='300px';
         img.style.height='300px';
         div.appendChild(img);
     console.log(indexright);
-    indexright > images.length-1 ? indexright=0 : indexright++;
 }
 // РОБОТА В АУДИТОРІЇ
 // - Сворити масив не цензцрних слів.
