@@ -63,16 +63,16 @@
 // Данные вводить через соответсвующую форму.
 // --Каждому контакту добавить кнопку для удаления контакта.
 // --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть все необходимые инпуты для редактирования, которые уже заполнены данными объекта]
-let forms=document.forms.forma;
-let button=document.getElementById('sub')
-let pearson={};
+//let forms=document.forms.forma;
+//let button=document.getElementById('sub')
+// let pearson={};
 
-button.onclick=(ev)=>{
-    ev.preventDefault();
-    for (const form of forms) {
-        form.oninput=()=>{
-          localStorage.setItem(localStorage.length,form.value);
-        }
-    }
-}
-console.log(pearson);
+// button.onclick=(ev)=>{
+//     ev.preventDefault();
+//     for (const form of forms) {
+//         form.oninput=()=>{
+//           localStorage.setItem(localStorage.length,form.value);
+//         }
+//     }
+// }
+// console.log(pearson);
